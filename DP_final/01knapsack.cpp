@@ -14,10 +14,10 @@ ll knapsack(){
                 k[i][w]=k[i-1][w];
 
 
-    int w=W,res=k[n][W];
+    ll w=W,res=k[n][W];
     cout<<"max value="<<k[n][w]<<endl;
     cout<<"weight"<<endl;
-    for(int i=n;i>0&&res>0;i--){
+    for(ll i=n;i>0&&res>0;i--){
         if(k[i-1][w]==res)
             continue;
         else{
