@@ -18,13 +18,25 @@ bool srt(const jm &a,const jm &b){
 return a.c<b.c;
 //here c is dcleared on struct jm
 }
+//OR
+bool srt(node a,node b){ return a.bt<b.bt; }
+
 bool st(const pair<string,int>&a,const pair<string,int>&b){
      return a.first<b.first;
 }
 int main(){
+#ifdef ONLINE_JUDGE
+  freopen("input.txt","r",stdin);
+  freopen("output.txt","w",stdout);
+#endif
     io
+int a,b,c,d,mn;
+cin>>a>>b>>c>>d;
+mn=min({a,b,c,d});
+mn=max({a,b,c,d});
 
-          int n=3;
+
+        int n=3;
           //vector<pair<int,int> >v;
            //v.push_back({i,j});
         vector<jm>v(n);
@@ -52,6 +64,8 @@ int main(){
           cout<<r[i]<<" ";cout<<endl;
      //sort(a,a+n,greater<int>());
      sort(r.begin(),r.end());//sort the values in the vector
+     sort(r.rbegin(),r.rend());//sort high to low
+
      r.erase(r.begin()+5);//this will erase first 6 element
      r.erase(r.begin(),r.begin()+3);//this will erase first 3 element
      //r.eraseElementWhoseValueIs(8);//5 9 2 8 0 7 erase 8
@@ -75,7 +89,17 @@ int main(){
       b.assign(4,vector<int>(4,0));
       f=r;//vector copied into vector f
 
-/*_____________________________stack___________________________*/
+/*_____________________________set___________________________*/
+set<int>s;
+while(1)
+{
+    int a;
+    cin>>a;
+    s.insert(a);
+    for(set<int>::iterator itr=s.begin();itr!=s.end();itr++)
+        cout<<*itr<<" ";
+}
+/*_______________________________stack_______________________________*/
        stack<int>S;
        S.push(23);
        cout<<S.top()<<endl;
@@ -112,7 +136,16 @@ int main(){
                // show content:
             for (map<string,int>::iterator it=mp.begin(); it!=mp.end(); ++it)
                     cout << it->first << " => " << it->second << '\n';
+/*_____________________________unordered_Map___________________________*/
 
+      unordered_map<string,string> u = {
+          {"RED","#FF0000"},
+          {"GREEN","#00FF00"},
+          {"BLUE","#0000FF"}
+      };
+      for( const auto& n : u ) {
+          std::cout << "Key:[" << n.first << "] Value:[" << n.second << "]\n";
+      }
 
     return 0;
 }

@@ -85,13 +85,17 @@ cout<<s;
 using namespace std;
 //all source from link>> https://www.geeksforgeeks.org/c-string-class-and-its-applications/
 int main()
-{
+{ 
     ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
     string a1="new",a2="man",a3;
     a3=a1+a2;//ans is>> "newman"
     printf("%s\n",a3.c_str());//print a3 string
     //getchar(); to skip null character
-
+    /*
+    while(next_permutation(a.begin(),a.end())){
+        cout<<a3<<endl;
+    }
+    */
 //covert int to string does not work on codeblocks
     int q=12345
     string s2=to_string(q);
