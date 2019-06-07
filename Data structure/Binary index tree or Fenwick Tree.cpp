@@ -1,3 +1,9 @@
+/*
+https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/
+https://www.youtube.com/watch?v=aAALKHLeexw&feature=youtu.be&fbclid=IwAR3vphBYPl6PHfShesP3FmRZJmaYlHndKi5I4GPneELnkvbuVbgbhJgFqbc
+https://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 #define mx 10000
