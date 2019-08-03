@@ -290,7 +290,8 @@ int main ()
   if (str1.compare(str2) != 0)
     std::cout << str1 << " is not " << str2 << '\n';
 
-  if (str1.compare(6,5,"apple") == 0)
+  if (str1.compare(6,5,"apple") == 0)  //if the two strings are equal than it will be thats way 
+  //this function is perfect for finding equal matching 
     std::cout << "still, " << str1 << " is an apple\n";
 
   if (str2.compare(str2.size()-5,5,"apple") == 0)
