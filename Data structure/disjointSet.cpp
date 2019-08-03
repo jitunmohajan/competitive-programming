@@ -1,3 +1,7 @@
+/*
+https://www.youtube.com/watch?v=5InBCasJFi8
+https://cp-algorithms.com/data_structures/disjoint_set_union.html
+*/
 #include<bits/stdc++.h>
 using namespace std;
 #define MX 100
