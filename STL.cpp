@@ -150,6 +150,32 @@ while(1)
     return 0;
 }
 /*
+graph>>
+#include<bits/stdc++.h>
+using namespace std;
+struct node{
+    int a,b;
+};
+int main(){
+    //vector<node>adj[100];
+    vector<vector<node> > adj(100,vector<node>(0));
+    int t,n,u,v,w;
+    cin>>t>>n;
+    for(int i=0;i<n;i++){
+        cin>>u>>v>>w;
+        adj[u].push_back({v,w});
+    }
+    adj.assign(100,vector<node>(0,{0,0}));
+
+
+
+    return 0;
+}
+
+
+*/
+/*
 int myint[]={16,2,77,29};
 vector<int>v6(myint,myint+sizeof(myint)/sizeof(int));//copy myint array
 */
+
