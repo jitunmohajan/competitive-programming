@@ -14,6 +14,9 @@ struct jm
     int b;
     int c;
 };
+struct node{
+  int a,b;
+};
 bool srt(const jm &a,const jm &b){
 return a.c<b.c;
 //here c is dcleared on struct jm
@@ -79,6 +82,24 @@ mn=max({a,b,c,d});
             cout<<endl;
       }
 
+//binnary search>>
+      // initializing vector of integers
+    vector<int> arr = {10, 15, 20, 25, 30, 35};
+    // using binary_search to check if 15 exists
+    if (binary_search(arr.begin(), arr.end(), 15))
+       cout << "15 exists in vector";
+    else
+       cout << "15 does not exist";
+
+    cout << endl;
+
+    // using binary_search to check if 23 exists
+    if (binary_search(arr.begin(), arr.end(), 23))
+         cout << "23 exists in vector";
+    else
+         cout << "23 does not exist";
+      
+
 //2D>>
       vector<int>c[100];//2D array vector work
       vector<vector<int> > b(4,vector<int>(4));//2D vector declear with size=4=int b[4][4];
@@ -88,6 +109,17 @@ mn=max({a,b,c,d});
       //or//use onnly assign for best output
       b.assign(4,vector<int>(4,0));
       f=r;//vector copied into vector f
+
+      //vector<node>adj[100];
+//for weighted graph>>      
+      vector<vector<node> > adj(100,vector<node>(0));
+      int t,n,u,v,w;
+      cin>>t>>n;
+      for(int i=0;i<n;i++){
+          cin>>u>>v>>w;
+          adj[u].push_back({v,w});
+      }
+      adj.assign(100,vector<node>(0,{0,0}));
 
 /*_____________________________set___________________________*/
 set<int>s;
@@ -150,27 +182,6 @@ while(1)
     return 0;
 }
 /*
-graph>>
-#include<bits/stdc++.h>
-using namespace std;
-struct node{
-    int a,b;
-};
-int main(){
-    //vector<node>adj[100];
-    vector<vector<node> > adj(100,vector<node>(0));
-    int t,n,u,v,w;
-    cin>>t>>n;
-    for(int i=0;i<n;i++){
-        cin>>u>>v>>w;
-        adj[u].push_back({v,w});
-    }
-    adj.assign(100,vector<node>(0,{0,0}));
-
-
-
-    return 0;
-}
 
 
 */
