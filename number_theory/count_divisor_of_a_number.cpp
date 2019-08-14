@@ -1,3 +1,4 @@
+//https://www.geeksforgeeks.org/count-divisors-n-on13/
 #include <bits/stdc++.h> 
 using namespace std; 
 int countDivisors(int n){ 
