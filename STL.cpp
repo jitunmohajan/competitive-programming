@@ -181,6 +181,8 @@ while(1)
 
     return 0;
 }
+//cout << std::fixed << std::setprecision(3) << d << '\n';
+//cout << std::fixed << std::setprecision(9) << e << '\n';
 /*
 
 
