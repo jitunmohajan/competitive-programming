@@ -1,9 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define mx 10000
+#define mx 100000
 vector<int>visit(mx,0);
 void sieve(){
-    for(int i=2;i<=mx;i++)
+    for(int i=2;i*i<=mx;i++)
         if(visit[i]==0)
             for(int j=i*2;j<=mx;j+=i)
                 visit[j]=1;
