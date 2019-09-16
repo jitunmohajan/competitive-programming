@@ -38,7 +38,8 @@ cin>>a>>b>>c>>d;
 mn=min({a,b,c,d});
 mn=max({a,b,c,d});
 
-
+		vector<int> marks={50,45,47,65,80};//use c++11 for this initialization
+		//otherwise it wont work
         int n=3;
           //vector<pair<int,int> >v;
            //v.push_back({i,j});
