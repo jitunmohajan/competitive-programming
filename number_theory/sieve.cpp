@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define mx 100000
+#define mx 1000000
 vector<int>visit(mx,0);
 void sieve(){
     for(int i=2;i*i<=mx;i++)
