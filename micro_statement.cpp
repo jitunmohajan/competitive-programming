@@ -22,7 +22,7 @@ using namespace std;
 #define chf for (c='a'; c<'h'; c++)
 
 //___________________________dbug code___________________________
-#define dbug(x) cout<<#x<<"       ="<<x<<endl
+#define dbug(x) cout<<#x<<"       ="<<x<<endl;
 void vec_debug(vector<ll>a){ll len=a.size();for(ll i=0;i<len;i++)cout<<a[i]<<" ";cout<<endl;}
 void array_debug(int a[],int len){for(ll i=0;i<len;i++)cout<<a[i]<<" ";cout<<endl;}
 //_________________________________________________________________________
