@@ -8,6 +8,7 @@ cin>>t;
 while(t--){
   cin>>n;
   float s=sqrt(n);
+  cout<<s<<endl;
   n=s*10000;
   int cnt=0;
   while(n>0){
