@@ -6,7 +6,7 @@ struct node{
     int a,b;
 };
 bool srt(node &a,node &b){
-    return a.a<a.b;
+    return a.a<b.a;
 }
 
 int main(){
