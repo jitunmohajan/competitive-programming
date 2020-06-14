@@ -1,3 +1,9 @@
+#pragma GCC target ("avx2")
+#pragma GCC optimization ("O3")
+#pragma GCC optimization ("unroll-loops")
+/*
+this three line boost your time limit sometime tle code got accepted
+*/
 
 #include<bits/stdc++.h>
 using namespace std;
